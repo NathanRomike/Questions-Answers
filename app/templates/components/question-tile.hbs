@@ -1,13 +1,13 @@
 <br>
-{{#link-to 'question' question.id question=model}}
   <div class="panel panel-success">
     <div class="panel-heading">
       <h1 class="panel-title">{{question.author}} asked:</h1>
     </div>
     <div class="panel-body">
-      <h4>{{question.content}}</h4>
+      {{#link-to 'question' question.id question=model}}
+        <h4>{{question.content}}</h4>
+      {{/link-to}}
       <p>{{moment-from-now question.ask_date}}</p>
       <p>{{question.answers.length}} answers</p>
     </div>
   </div>
-{{/link-to}}

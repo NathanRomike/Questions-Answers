@@ -5,8 +5,8 @@
           {{textarea value=content class="pure-input-1-2" placeholder="Answer goes here..."}}
           {{input value=notes class="pure-input-1-2" placeholder="notes"}}
       </fieldset>
-
-      <button {{action 'save_question'}} type="submit" class="pure-button pure-input-1-2 pure-button-primary">Ask!</button>
+      <button {{action 'save_question'}} type="submit" class="btn btn-primary">Ask!</button>
+      <button {{action 'cancel'}} type="submit" class="btn btn-danger">Cancel</button>
   </form>
 {{else}}
   <button {{action 'showQuestionForm'}} class="btn btn-success" type="button">Ask Question</button>

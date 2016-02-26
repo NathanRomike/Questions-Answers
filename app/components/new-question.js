@@ -16,6 +16,10 @@ export default Ember.Component.extend({
       };
       this.sendAction('saveQuestion', params);
       this.set('questionForm', false);
+    },
+
+    cancel() {
+      this.set('questionForm', false);
     }
   }
 });
