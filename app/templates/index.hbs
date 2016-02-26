@@ -1,4 +1,6 @@
 <div class="pure">
-  <button {{action 'showQuestionForm'}} class="pure-button" type="button">Ask Question</button>
-  {{new-question}}
+  {{new-question saveQuestion="saveQuestion"}}
+  {{#each model.question as |question|}}
+    <h4>{{question.author}}</h4>
+  {{/each}}
 </div>

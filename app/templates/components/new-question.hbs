@@ -8,4 +8,6 @@
 
       <button {{action 'save_question'}} type="submit" class="pure-button pure-input-1-2 pure-button-primary">Ask!</button>
   </form>
+{{else}}
+  <button {{action 'showQuestionForm'}} class="pure-button" type="button">Ask Question</button>
 {{/if}}
