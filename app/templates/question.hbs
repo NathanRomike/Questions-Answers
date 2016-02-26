@@ -2,8 +2,8 @@
 <p>{{model.question.content}}</p>
 {{edit-question question=model.question edit="edit"}}
 
-{{#each model.answers as |answer|}}
-  {{answer-tile answer=answer}}
+{{#each model.question.answers as |answer|}}
+    {{answer-tile answer=answer}}
 {{/each}}
 
 <br>
