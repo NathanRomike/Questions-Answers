@@ -1,1 +1,13 @@
-{{yield}}
+{{#if questionEditForm}}
+  <form class="pure-form">
+      <fieldset class="pure-group">
+          {{input value=author class="pure-input-1-2" placeholder=question.author}}
+          {{textarea value=content class="pure-input-1-2" placeholder=question.content}}
+          {{input value=notes class="pure-input-1-2" placeholder=question.notes}}
+      </fieldset>
+
+      <button {{action 'edit_question' question}} type="submit" class="pure-button pure-input-1-2 pure-button-primary">Update!</button>
+  </form>
+{{else}}
+  <button {{action 'showQuestionEditForm'}} class="btn btn-primary" type="button">Edit Question</button>
+{{/if}}

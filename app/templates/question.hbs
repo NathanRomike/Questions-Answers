@@ -1,5 +1,6 @@
 <h1>{{model.question.author}}'s Question:</h1>
 <p>{{model.question.content}}</p>
+{{edit-question question=model.question edit="edit"}}
 
 {{#each model.answers as |answer|}}
   {{answer-tile answer=answer}}
