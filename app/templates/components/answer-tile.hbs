@@ -1,5 +1,10 @@
 <br>
-<hr>
-<h1>{{answer.author}} replied:</h1>
-<p>{{answer.content}}</p>
-<p>{{moment-from-now answer.answer_date}}</p>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h1 class="panel-title">{{answer.author}} replied:</h1>
+  </div>
+  <div class="panel-body">
+    <h4>{{answer.content}}</h4>
+    <p>{{moment-from-now answer.answer_date}}</p>
+  </div>
+</div>

@@ -1,5 +1,5 @@
-<h1>{{model.question.author}}'s Question:</h1>
-<p>{{model.question.content}}</p>
+<h1>{{model.question.author}} Asked:</h1>
+<h4>{{model.question.content}}</h4>
 {{edit-question question=model.question edit="edit"}}
 
 {{#each model.question.answers as |answer|}}
@@ -7,5 +7,4 @@
 {{/each}}
 
 <br>
-<hr>
 {{new-answer saveAnswer="saveAnswer" question=model.question}}
