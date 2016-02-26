@@ -1,6 +1,6 @@
 <div class="pure">
   {{new-question saveQuestion="saveQuestion" question=model}}
-  {{#each model as |question|}}
+  {{#each model.question as |question|}}
     {{question-tile question=question}}
   {{/each}}
 </div>
