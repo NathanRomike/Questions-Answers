@@ -1,1 +1,11 @@
-{{yield}}
+{{#if questionForm}}
+  <form class="pure-form">
+      <fieldset class="pure-group">
+          {{input value=author class="pure-input-1-2" placeholder="Your Name"}}
+          {{textarea value=content class="pure-input-1-2" placeholder="Ask question here..."}}
+          {{input value=notes class="pure-input-1-2" placeholder="notes"}}
+      </fieldset>
+
+      <button {{action 'save_question'}} type="submit" class="pure-button pure-input-1-2 pure-button-primary">Ask!</button>
+  </form>
+{{/if}}
