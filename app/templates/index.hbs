@@ -1,6 +1,6 @@
 <div class="pure">
-  {{new-question saveQuestion="saveQuestion"}}
-  {{#each model.question as |question|}}
-    <h4>{{question.author}}</h4>
+  {{new-question saveQuestion="saveQuestion" question=model}}
+  {{#each model as |question|}}
+    {{question-tile question=question}}
   {{/each}}
 </div>

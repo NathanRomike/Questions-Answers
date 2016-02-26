@@ -1,13 +1,15 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  // model() {
-  //   return this.store.findAll('question');
-  // },
+  model() {
+    return Ember.RSVP.hash({
+      question: this.store.findAll('question'),
+      answer: this.store.findAll('answer')
+    });
+  },
 
   actions: {
     saveQuestion(params) {
-      console.log("It got to the index.js!");
       var newQuestion = this.store.createRecord('question', params);
       newQuestion.save();
       this.transitionTo('index');

@@ -14,7 +14,6 @@ export default Ember.Component.extend({
         notes: this.get('notes'),
         ask_date: Date.now()
       };
-      console.log(params.author);
       this.sendAction('saveQuestion', params);
       this.set('questionForm', false);
     }
