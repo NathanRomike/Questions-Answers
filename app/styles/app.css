@@ -3,3 +3,11 @@
   align-items: center;
   justify-content: center;
 }
+
+.navbar {
+  background-color: tomato;
+}
+
+.brand {
+  color: white;
+}
