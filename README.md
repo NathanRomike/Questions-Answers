@@ -2,6 +2,16 @@
 
 Questions+Answers is a Q&A message board web application written in Javascript, utilizing the Ember framework.
 
+## Technologies Used
+
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+* Ember
+* Node.js
+* Bower
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
